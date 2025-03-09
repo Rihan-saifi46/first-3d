@@ -31,19 +31,20 @@ scene.add(box1)
 
 // Renderer size
 const size = {
-    width: 1130,
-    height: 500,
+    width: 1200,
+    height:550,
 };
 
 // Camera setup
 const camera = new THREE.PerspectiveCamera(75, size.width / size.height);
-camera.position.z = 4;
+camera.position.z = 6;
 scene.add(camera);
 
 // Rendering 
 const target = document.querySelector(".wbg");
 const renderer = new THREE.WebGLRenderer({ canvas: target, antialias: true });
 renderer.setSize(size.width, size.height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.render(scene, camera);
 
 // let time = Date.now();
