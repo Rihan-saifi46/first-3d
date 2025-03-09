@@ -31,8 +31,8 @@ scene.add(box1)
 
 // Renderer size
 const size = {
-    width: 1260,
-    height: 570,
+    width: 1230,
+    height: 550,
 };
 
 // Camera setup
